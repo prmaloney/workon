@@ -23,6 +23,7 @@ plugins=(
    choice (in your `.zshrc`)
 5. Ensure that the `$WORK_DIR` environment variable is set to the directory
    containing your projects (also in `.zshrc`)
+6. Restart your shell
 
 ## Usage
 Simply run `workon` to run `fzf` over the list of your projects. Once selected,
