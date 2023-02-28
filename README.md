@@ -21,8 +21,14 @@ plugins=(
 ```
 4. Ensure your `$EDITOR` environment variable is set to the editor of your
    choice (in your `.zshrc`)
+   ```
+   export EDITOR='nvim' # or your editor of choice
+   ```
 5. Ensure that the `$WORK_DIR` environment variable is set to the directory
    containing your projects (also in `.zshrc`)
+   ```
+   export WORK_DIR=$HOME/path/to/your/projects
+   ```
 6. Restart your shell
 
 ## Usage
