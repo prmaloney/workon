@@ -1,6 +1,9 @@
 workon() {
-  if [ -z $WORK_DIR ]; then
+  if [[ -z $WORK_DIR ]]; then
     echo 'WORK_DIR is not set';
+    return 1;
+  elif [[ -z $EDITOR ]]; then
+    echo 'EDITOR is not set';
     return 1;
   fi
 
