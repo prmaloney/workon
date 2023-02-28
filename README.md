@@ -1,6 +1,6 @@
 # workon
 
-Seamlessly switch between your projects using fzf. 
+A plugin for Oh My Zsh to seamlessly switch between your projects using fzf. 
 
 Requirements: [Zsh](https://www.zsh.org/), [oh-my-zsh](https://ohmyz.sh/),
 [fzf](https://github.com/junegunn/fzf)
