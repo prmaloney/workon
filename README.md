@@ -9,7 +9,9 @@ Requirements: [Zsh](https://www.zsh.org/), [oh-my-zsh](https://ohmyz.sh/),
 
 1. Ensure all requirements are installed.
 2. Download and install with git into the `$ZSH_CUSTOM` directory 
-```git clone https://github.com/prmaloney/workon $ZSH_CUSTOM/plugins/workon```
+```
+git clone https://github.com/prmaloney/workon $ZSH_CUSTOM/plugins/workon
+```
 3. Add the plugin to your list of plugins for Oh My Zsh in your `.zshrc`
 ```
 plugins=( 
