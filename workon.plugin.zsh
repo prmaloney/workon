@@ -8,8 +8,13 @@ workon() {
   fi
 
   if [ "$#" -eq 1 ]; then
-    cd "$(find $WORK_DIR -maxdepth 1 -mindepth 1 | fzf --query="$1" --select-1)"; $EDITOR .;
+    DIR=$(find $WORK_DIR -maxdepth 1 -mindepth 1 | fzf --query="$1" --select-1);
   else
-    cd "$(find $WORK_DIR -maxdepth 1 -mindepth 1 | fzf)"; $EDITOR .;
+    DIR=$(find $WORK_DIR -maxdepth 1 -mindepth 1 | fzf);
+  fi
+
+  if [[ ! -z "$DIR" ]]; then
+    cd $DIR;
+    $EDITOR .;
   fi
 }
